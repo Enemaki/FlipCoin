@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <link href="index.css" rel="stylesheet" />
+
+    <title>Flip the coin | devChallenges.io</title>
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    
+  </head>
+  <body>
+    <!-- 
+
+    Flip a Coin Game
+    Press the coin or the button to flip the coin
+    Head
+    Tail
+    Random
+  
+    -->
+    <div class="container">
+      <div class="header-section">
+        <h1>Flip the coin</h1>
+        <p>Press the coin or the button to flip the coin</p>
+      </div>
+      <div class="coin-section">
+        <img 
+          src="./resources/heads.svg"
+          alt="coin-image"
+          id="coin-image"
+          onclick="flipCoin()"
+        />
+        <img 
+          src="./resources/shadow.svg"
+          alt="heads"
+          id="shadow"
+        />
+        <p>Heads</p>
+      </div>
+      <button class="button" id="button" onclick="flipCoin()">RANDOM</button>
+    </div>
+
+    <div class="author-info">
+      Coded by <a href="#">Sadiku Mustapha Eneye</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+    <script src="index.js"/>
+  </body>
+</html>
